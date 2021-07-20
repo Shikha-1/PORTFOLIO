@@ -24,17 +24,17 @@ function Contact() {
               icon={"phone"}
               title={"Phone"}
               style={{transform : "rotateY(180deg)"}}
-              text1={`${process.env.REACT_APP_PHONE}`}
+              text1={"+91 9128671745"}
             />
             <ContactItem
               icon={"envelope"}
               title={"Email"}
-              text1={`${process.env.REACT_APP_EMAIL}`}
+              text1={`shikhakumarisingh4@gmail.com`}
             />
             <ContactItem
               icon={"map-marker"}
               title={"Address"}
-              text1={`${process.env.REACT_APP_ADDRESS}`}
+              text1={`C-246, New Palam Vihar, Phase-2, Gurugram (122017), Haryana`}
             />
           </div>
         </div>
