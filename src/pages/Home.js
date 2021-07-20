@@ -20,7 +20,7 @@ function Home() {
           <div className="icons">
             <a
               className="icon icon-holder"
-              href={`${process.env.REACT_APP_GITHUB}`}
+              href={`https://github.com/Shikha-1`}
               target="_blank"
               rel="noreferrer"
             >
@@ -28,7 +28,7 @@ function Home() {
             </a>
             <a
               className="icon icon-holder"
-              href={`${process.env.REACT_APP_LINKEDIN}`}
+              href={`https://www.linkedin.com/in/shikha-singh-7258281b6/`}
               target="_blank"
               rel="noreferrer"
             >
@@ -36,7 +36,7 @@ function Home() {
             </a>
             <a
               className="icon icon-holder"
-              href={`${process.env.REACT_APP_RESUME}`}
+              href={`https://drive.google.com/file/d/1uKb7acuqZn7hckFAHhlWT5Q_uS9VrP6b/view?usp=sharing`}
               target="_blank"
               rel="noreferrer"
             >

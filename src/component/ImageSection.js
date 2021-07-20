@@ -39,7 +39,7 @@ function ImageSection() {
           </div>
         </div>
         <a
-          href={`${process.env.REACT_APP_RESUME}`}
+          href={`https://drive.google.com/file/d/1uKb7acuqZn7hckFAHhlWT5Q_uS9VrP6b/view?usp=sharing`}
           target="_blank"
           rel="noreferrer"
         >
