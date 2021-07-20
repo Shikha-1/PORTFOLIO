@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    color: #a4acc4;
+    font-size: 1.2rem;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #0056d898;
+    border-radius: 50px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #777;
+}
+body{
+    color: #a4acc4;
+    background-color: #10121B;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2rem;
+}
+span{
+    color: #037FFF;
+}
+.App{
+    min-width: 100wh;
+    min-height: 100vh;
+}   
+.sidebar{
+    width: 18%;
+    height: 100vh;
+    background-color: #191D2B;
+    position: fixed;
+    z-index: 11;
+    border-right: 1px solid #2e344e;
+    transform-origin: left;
+}
+.main-content{
+    width: 84%;
+    margin-left: 16%;
+    background-color: #10121B;
+    min-height: 100vh;
+    display: grid;
+    position: relative;
+}
+.content{
+    margin: 5rem;
+}
+.nav-btn{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    right: 10%;
+    top: 5%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.lines-1, .lines-2, .lines-3{
+    height: .4rem;
+    width: 100%;
+    background-color: #3858cc;
+    pointer-events: all;
+    display: none;
+    border-radius: 20px;
+}
+.line-1:not(:last-child), .line-2:not(:last-child), .line3:not(:last-child){
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 1350px){
+    .main-content{
+        margin: 0;
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+    .lines-1, .lines-2, .lines-3{
+        display: block;
+    }
+    .sidebar{
+        transform: translateX(-100%);
+        transition: all 0.4s ease-in-out;
+        width: 50%;
+    }
+    .nav-toggle{
+        transition: all .4s ease-in-out;
+        transform: translateX(0);
+    }
+    .content{
+        margin: 0;
+        margin-top: 5rem;
+    }
+}
