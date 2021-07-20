@@ -27,7 +27,7 @@ function Portfolio() {
                 <Title title={'Portfolio'} span={'Portfolio'} />
             </div>
             <div className="portfolios-data">
-                <Catagories filter={filter} categories={categories} />
+                <Catagories filter={filter} categories={categories} setCategories={setCategories}/>
                 <MenuItems menuItem={menuItems} />
             </div>
         </div>
