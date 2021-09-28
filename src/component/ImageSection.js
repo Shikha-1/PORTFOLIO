@@ -34,14 +34,14 @@ function ImageSection() {
               <span>Bhagwan Mahaveer College of Engineering & Management</span>
             </p>
             <p>
-              CGPA (till 5th Sem.) <span> 9.6</span>
+              CGPA (till 5th Sem.) <span> 8.3</span>
             </p>
           </div>
         </div>
         <a
-          href={`https://drive.google.com/file/d/1uKb7acuqZn7hckFAHhlWT5Q_uS9VrP6b/view?usp=sharing`}
+          href="https://drive.google.com/file/d/1fOQDRIf4egp8SNK2jF8mJIZlxPJpAabZ/view?usp=sharing"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <button className="btn">Download CV</button>
         </a>

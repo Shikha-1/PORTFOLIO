@@ -99,5 +99,27 @@ const portfolios = [
     title: "Daily News",
     placholder: `Shows daily top 10 news headlines of India`,
   },
+  {
+    id: 10,
+    category: "React Js",
+    link1: "https://github.com/Shikha-1/APOD-NASA",
+    link2: "https://sharp-bell-100c75.netlify.app",
+    icon1: "Code",
+    icon2: "Demo",
+    image: "https://assets10.lottiefiles.com/private_files/lf30_usyig03v.json",
+    title: "Astronomy Picture of the Day",
+    placholder: `Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.`,
+  },
+  {
+    id: 11,
+    category: "React Js",
+    link1: "https://github.com/Shikha-1/World-Wildfire-Tracker",
+    link2: "https://vigilant-kowalevski-e77d8d.netlify.app",
+    icon1: "Code",
+    icon2: "Demo",
+    image: "https://assets10.lottiefiles.com/packages/lf20_mstvhbz0.json",
+    title: "World Wildfire Tracker",
+    placholder: `Shows wildfires across the world along with location details.`,
+  },
 ];
 export default portfolios;

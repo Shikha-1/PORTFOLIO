@@ -24,9 +24,7 @@
     padding: 1rem;
     width: 95%;
     background-color: #191D2B;
-    border-left: 1px solid #2e344e;
-    border-right: 1px solid #2e344e;
-    border-bottom: 1px solid #2e344e;
+    border: 1px solid #2e344e;
     border-top: 8px solid #2e344e;
     transition: all .4s ease-in-out;
 }

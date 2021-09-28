@@ -10,7 +10,7 @@ function MenuItems({ menuItem }) {
             <div className="image-data">
               <lottie-player
                 src={item.image}
-                background="#191D2B"
+                background="#eeeee4"
                 speed="0.5"
                 style={{ height: "250px", width: "relative" }}
                 loop
@@ -18,10 +18,10 @@ function MenuItems({ menuItem }) {
               ></lottie-player>
               <ul className="hover-items">
                 <li>
-                  <a href={item.link1} target="_blank" rel="noreferrer">
+                  <a href={item.link1} target="_blank" rel="noopener noreferrer">
                     {item.icon1}
                   </a>
-                  <a href={item.link2} target="_blank" rel="noreferrer">
+                  <a href={item.link2} target="_blank" rel="noopener noreferrer">
                     {item.icon2}
                   </a>
                 </li>
