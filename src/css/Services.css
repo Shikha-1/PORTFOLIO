@@ -1,52 +1,76 @@
-.service{
-    width: 95%;
-    background-color: #191D2B;
-    border-left: 1px solid #2e344e;
-    border-right: 1px solid #2e344e;
-    border-bottom: 1px solid #2e344e;
-    border-top: 8px solid #2e344e;
-    transition: all .4s ease-in-out;
+.ServicesSection {
+	width: 50%;
 }
-.service:hover{
-    border-top: 8px solid #037FFF;
+.service {
+	width: 100%;
+	background-color: #191d2b;
+	border-left: 1px solid #2e344e;
+	border-right: 1px solid #2e344e;
+	border-bottom: 1px solid #2e344e;
+	border-top: 8px solid #2e344e;
+	transition: all 0.4s ease-in-out;
 }
-.service-content{
-    padding: 1rem;
+.service:hover {
+	border-top: 8px solid #7d03ff;
 }
-.s-title{
-    font-size: 1.8rem;
-    font-weight: 500;
-    position: relative;
-    padding-bottom: 1rem;
-    margin: 1rem 0;
+.service-content {
+	padding: 1rem;
 }
-.s-title::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 30%;
-    height: 1px;
-    background-color: #2e344e;
+.company {
+	display: flex;
+	color: #7d03ff;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.5rem;
 }
-.s-test{
-    font-size: 1.3rem;
-}              
-.servives-container{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4rem;
+.service-section {
+	font-size: 1rem;
+}
+.s-text {
+	font-size: 1rem;
+}
+.s-description {
+	font-size: 1rem;
+	padding: 0.5rem;
+}
+.s-description > li {
+	margin-bottom: 0.25rem;
+}
+.s-title {
+	font-size: 1.5rem;
+	font-weight: 500;
+	position: relative;
+	padding-bottom: 1rem;
+	margin: 1rem 0;
+}
+.s-title::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 30%;
+	height: 1px;
+	background-color: #2e344e;
+}
+.servives-container {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+	justify-content: space-between;
+	margin: 2.5rem 0;
 }
 
-@media screen and (max-width:1400px){
-    .service
-    {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    .servives-container
-    {
-        flex-direction: column;
-        margin-bottom: 2rem;
-    }
+@media screen and (max-width: 950px) {
+	.service {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.servives-container {
+		flex-direction: column;
+		grid-gap: unset;
+		gap: unset;
+	}
+	.ServicesSection {
+		width: 100%;
+	}
 }

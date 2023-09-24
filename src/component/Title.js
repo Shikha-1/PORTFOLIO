@@ -1,12 +1,12 @@
 import React from 'react'
 import "../css/Title.css"
 
-function Title({title, span}) {
+function Title({ title }) {
     return (
         <div className="Title">
             <h3>
                 {title}
-                <span>{span}</span>
+                <span>{title}</span>
             </h3>
         </div>
     )
