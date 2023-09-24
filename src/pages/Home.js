@@ -1,51 +1,48 @@
 import React from 'react'
 import "../css/Home.css"
+import { PersonalDetails } from '../constant';
 
 function Home() {
-    return (
-      <div className="HomePage">
-        <header className="hero">
-          <h1 className="hero-text">
-            Hi, I am
-            <span> Shikha</span>
-          </h1>
-          <p className="h-sub-text">
-            An undergraduate student pursing B. Tech. in CSE from Bhagwan
-            Mahaveer College Of Engineering And Management, affliated to GGSIPU
-            (Delhi). I am constantly learning something new in the feild of
-            technology and looking to enhance and explore my learning, knowledge
-            and skills in an esteemed organization while contributing to the
-            growth of organisation.
-          </p>
-          <div className="icons">
-            <a
-              className="icon icon-holder"
-              href={`https://github.com/Shikha-1`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              className="icon icon-holder"
-              href={`https://www.linkedin.com/in/shikha-singh-7258281b6/`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a
-              className="icon icon-holder"
-              href={`https://drive.google.com/file/d/1fOQDRIf4egp8SNK2jF8mJIZlxPJpAabZ/view?usp=sharing`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fas fa-cloud-download-alt"></i>
-            </a>
-          </div>
-        </header>
-      </div>
-    );
+  return (
+    <div className="HomePage">
+      <header className="hero">
+        <h1 className="hero-text">
+          I am
+          <span> Shikha</span>
+        </h1>
+        <p className="h-sub-text">
+          A skilled web developer with a proven track record in collaborating effectively with design and back-end teams to implement visually appealing and responsive user interfaces. Proficient in writing clean, well-structured HTML and CSS code, ensuring cross-browser compatibility and adherence to accessibility standards. Experienced in developing interactive web applications using ReactJS, prioritizing performance and code quality, as well as implementing state management with Redux. Adept at optimizing applications for speed and scalability and troubleshooting front-end issues and bugs. Staying up-to-date with the latest web development trends, actively contributing to code reviews and process improvements. Dedication to delivering high-quality products and a valuable addition to any cross-functional team, ready to meet project deadlines and exceed expectations.
+        </p>
+        <div className="icons">
+          <a
+            className="icon icon-holder"
+            href={PersonalDetails.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            className="icon icon-holder"
+            href={PersonalDetails.linkedInUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            className="icon icon-holder"
+            href={`/Shikha's Resume.pdf`}
+            target="_blank"
+            download="Shikha's Resume.pdf"
+            rel="noopener noreferrer"
+          >
+            <i className="fas fa-cloud-download-alt"></i>
+          </a>
+        </div>
+      </header>
+    </div>
+  );
 }
 
 export default Home
