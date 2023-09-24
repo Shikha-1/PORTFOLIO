@@ -11,23 +11,27 @@ function Portfolio() {
     const [menuItems, setMenuItems] = useState(portfolios);
 
     const filter = (category) => {
-        if (category === 'All') {
+        if(category === 'All'){
             setMenuItems(portfolios)
             return;
         }
-        const filteredData = portfolios.filter((item) => {
+        const filteredData  = portfolios.filter((item)=>{
             return item.category === category;
         })
         setMenuItems(filteredData);
     }
 
     return (
-        <>
-            <Title title={'Projects'} />
-            <Catagories filter={filter} categories={categories} setCategories={setCategories} />
-            <MenuItems menuItem={menuItems} />
-        </>
+        <div className="PortfolioPage">
+            <div className="title">
+                <Title title={'Portfolio'} span={'Portfolio'} />
+            </div>
+            <div className="portfolios-data">
+                <Catagories filter={filter} categories={categories} setCategories={setCategories}/>
+                <MenuItems menuItem={menuItems} />
+            </div>
+        </div>
     )
-}
+} 
 
 export default Portfolio
