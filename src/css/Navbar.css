@@ -1,61 +1,59 @@
-.navbar {
-	height: 100vh;
+.navbar{
+    height: 100vh;
 }
-.nav,
-.nav-items {
-	height: calc(100vh - 250px - 1rem);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 0.5rem;
+.nav, .nav-items{
+    height: calc(100vh - 250px - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.nav {
-	align-items: center;
+.nav{
+    align-items: center;
 }
-.profile {
-	height: fit-content;
-	text-align: center;
-	margin-top: 1rem;
-	border-bottom: 1px solid #2e344e;
+.profile{
+    height: fit-content;
+    text-align: center;
+    margin-top: 1rem;
+    border-bottom: 1px solid #2e344e;
 }
-.nav-icon {
-	font-size: 13rem;
-	margin-bottom: 1rem;
+.nav-icon{
+    font-size: 13rem;
+    margin-bottom: 1rem;
 }
-.nav-items {
-	width: 100%;
+.nav-items{
+    width: 100%;
 }
-.nav-item {
-	list-style: none;
-	text-align: center;
-	padding: 0.5rem 0;
-	font-size: 1.5rem;
+.nav-item{
+    list-style: none;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
 }
-.nav-items > a {
-	text-decoration: none;
-	font-size: inherit;
-	color: inherit;
-	display: block;
-	padding: 0.8rem 0;
-	position: relative;
+.nav-item> a{
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+    display: block;
+    padding: .8rem 0;
+    position: relative;
 }
-.nav-items > a::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0.4rem;
-	height: 100%;
-	background-color: #0381ff33;
-	transform-origin: bottom;
-	transform: scale(0);
-	overflow-x: hidden;
-	transition: transform 0.6s, 0.2s width 0.5s cubic-bezier(1, -0.16, 0.6, 1.35);
+.nav-item> a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .4rem;
+    height: 100%;
+    background-color: #0381ff33;
+    transform-origin: bottom;
+    transform: scale(0);
+    overflow-x: hidden;
+    transition: transform .6s, .2s width .5s cubic-bezier(1,-0.16,.6,1.35);
 }
-.nav-items > a:hover::before {
-	width: 100%;
-	transform: scale(1);
+.nav-item> a:hover::before{
+    width: 100%;
+    transform: scale(1);
 }
-.active {
-	background-color: #7d03ff;
+.active{
+    background-color: #037FFF;
 }
