@@ -10,6 +10,8 @@
 .right-items {
 	margin-left: 2rem;
 	font-size: 1.25rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .right-items > h6 {
 	font-size: 1.5rem;
@@ -19,11 +21,6 @@
 	margin-top: 2.5rem;
 	gap: 1rem;
 	grid-template-columns: repeat(2, 1fr);
-}
-
-.right-items {
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
 .map-sect {

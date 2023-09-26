@@ -5,6 +5,8 @@
 }
 body {
 	color: #a4acc4;
+	background-color: #10121b;
+	font-family: 'Varela Round', sans-serif;
 	font-size: 1.2rem;
 }
 body::-webkit-scrollbar {
@@ -16,12 +18,6 @@ body::-webkit-scrollbar-thumb {
 }
 body::-webkit-scrollbar-track {
 	background-color: #777;
-}
-body {
-	color: #a4acc4;
-	background-color: #10121b;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 1.2rem;
 }
 span {
 	color: #7d03ff;
@@ -54,10 +50,6 @@ span {
 	display: flex;
 	position: absolute;
 	z-index: 10;
-	right: 5%;
-	top: 2.5%;
-	width: 2.5rem;
-	height: 2.5rem;
 	cursor: pointer;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -117,16 +109,12 @@ span {
 	.lines-2,
 	.lines-3 {
 		height: 0.2rem;
+		display: block;
 	}
 	.content {
-		margin: 0;
+		margin: 2rem 0 0 0;
 		padding: 1rem;
 		width: 100%;
-	}
-	.lines-1,
-	.lines-2,
-	.lines-3 {
-		display: block;
 	}
 	.sidebar {
 		transform: translateX(-100%);
